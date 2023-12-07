@@ -1,0 +1,86 @@
+.header-background {
+  background-color: #272727;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 5px;
+}
+
+.header-logo-img {
+  height: 30px;
+}
+
+.small-view-icon-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-img {
+  height: 30px;
+  width: 30px;
+  color: #ffffff;
+}
+
+.logout-icon-btn {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+.large-view-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .small-view-icon-container {
+    display: none;
+  }
+
+  .large-view-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .large-view-part-container {
+    list-style-type: none;
+    padding-left: 0px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .link-element {
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: #f1f5f9;
+    font-size: 21px;
+    margin-right: 15px;
+  }
+
+  .logout-btn {
+    background-color: #6366f1;
+    font-family: 'Roboto';
+    color: #f1f5f9;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+}
